@@ -1,0 +1,57 @@
+npm init
+npm install express
+npm install cors
+npm install body-parser
+
+
+inicializar typescript json
+tcs --init
+	->  "outDir": "dist/",   
+
+
+inicializar el compilado de typescript en modo watch
+	tsc -w
+
+ver los cambios:
+	nodemon dist/
+
+
+
+ayudas de express:
+	npm i --save-dev @types/express
+	npm i --save-dev @types/cors
+	npm i --save-dev @types/socket.io
+
+
+
+
+
+
+Angular
+	ng new proyecto
+	npm install ngx-socket-io
+
+Para que angular no marque error por no inicializar variables como de tipo Subscriptionen el  tsconfig.json:
+	"strictPropertyInitialization": false,
+
+Crear un servicio para sockets
+	ng g s services/websocket
+
+Agregar bootstrap en index.html
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+componente footer:
+	ng g c components/footer --skip-tests --inline-style
+
+servicio para emitir:
+ng g s services/chat --skip-tests
+
+componente chat:
+	ng g c components/chat --skip-tests --inline-style
+
+en el app.module agregar el FormsModule en los imports
+	FormsModule
+
+
+
+avance Secc4 cap.22
