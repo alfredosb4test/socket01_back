@@ -54,4 +54,15 @@ en el app.module agregar el FormsModule en los imports
 
 
 
+componente lista usuario:
+	ng g c components/listaUsuarios --skip-tests --inline-style
+	ng g c pages/login --skip-tests --inline-style
+	ng g c pages/mensajes --skip-tests --inline-style
+
+guard:
+	ng g s guards/usuarioGuard
+
+module para route:
+	ng g m appRouting --flat
+
 avance Secc4 cap.22
